@@ -1,0 +1,64 @@
+/* Set background color for body */
+body {
+background-image:url("icon/loginback.jpg");
+	background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+}
+
+/* Set background color for container */
+.container {
+  background-color: rgba(156,252,248,1);
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Set color for heading */
+h1 {
+  color: #333333;
+}
+
+/* Set color for table headings */
+table th {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Set color for table rows */
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Set color for total price row */
+table tr:last-child td {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Set color for logout and secure files buttons */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #0062cc;
+  border-color: #005cbf;
+}

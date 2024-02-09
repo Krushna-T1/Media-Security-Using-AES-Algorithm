@@ -1,0 +1,296 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color:#c5c6e4b9;
+  
+  
+  
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  
+}
+
+/* Header styles */
+header {
+  background-color:black;
+  color: #c9d0d0;
+  padding: 0;
+  margin-bottom: 5px;
+  position: fixed;
+  top: 45px; /* set initial position */
+  left: 0;
+  width: 100%;
+  transition: top 0.3s ease; /* add transition */
+}
+
+header.top {
+  top: 0; /* change position on scroll */
+}
+
+
+
+
+h1 {
+  
+  font-size: 30px;
+  margin: 0;
+  text-align:center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  float:left;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+.get-started a {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+
+header nav li:first-child {
+  margin-left: 0;
+}
+
+header nav a {
+  display: block;
+  color:white;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+  background-color: #11c45b;
+}
+
+/* Hero section styles */
+#hero-section {
+  background-image: url("home/back.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.background{
+  background-image: url("home/back2.jpg");
+  background-size: cover;
+  background-position: center;
+ 
+
+}
+.h2
+{
+  padding-top:50px;
+  text-align:center;
+  font-size: 30px;
+}
+
+.hero-text {
+ text-align: center;
+  max-width: auto;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.btn {
+  align-items: center;
+  display: inline-block;
+  background-color: #f1c40f;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* Features section styles */
+p{
+  font-weight:bold;
+}
+#features-section {
+  padding: 100px 0;
+}
+
+.section-header {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feature-item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.feature-text {
+  font-size: 20px;
+  max-width: 700px;
+  font:bold;
+  margin: 0 auto;
+}
+/* Style for feature section */
+.feature-section1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Style for feature item */
+.feature-item1 {
+  margin: 20px 0;
+}
+
+.feature-title1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.feature-text1 {
+  font-size: 25px;
+  line-height: 1.5;
+  font-style:italic;
+}
+
+.highlight {
+  color: #007bff;
+  font-weight: bold;
+}
+
+
+
+
+/* About section styles */
+#about-section {
+  background-color: #f2f2f2;
+  padding: 100px 0;
+}
+
+.section-text {
+  font-size: 20px;
+  max-width:fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Contact Form */
+.contact-form {
+  margin-top: 50px;
+  
+}
+#contact-section
+{
+  background-color: #0a0a0a;
+  border:3px #007bff;
+  color:white;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input,
+.form-textarea {
+  width: 50%;
+  padding: 7px;
+  border: 2px solid #0a0a0a;
+  border-radius: 10px;
+}
+
+.form-textarea {
+  height: 50px;
+}
+
+.btn {
+  
+  margin-top:10px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #29bb1f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Media Security by AES</title>
+    <link rel="stylesheet" href="design/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+          if (!$(this).scrollTop() ==0) {
+            $('header').css('top', '0');
+          } else {
+            $('header').css('top', '45px');
+          }
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Media Security by AES</h1>
+    <header>
+        <div class="container">
+            
+            <nav>
+  <ul>
+    <li><a href="#hero-section">Home</a></li>
+    <li><a href="#about-section">About</a></li>
+    <li><a href="#features-section">Features</a></li>
+    <li><a href="#contact-section">Contact</a></li>
+    <li class="get-started"><a href="Login.jsp">Get Started</a></li>
+  </ul>
+</nav>
+        </div>
+    </header>
+    <section id="hero-section">
+        
+    </section>
+    <div class="background">
+    <div class="container">
+        <h2 class="h2">Welcome to Media Security</h2>
+        <p class="hero-text">Securely encrypt and decrypt your media files using the Advanced Encryption Standard (AES)
+            algorithm. Protect your sensitive media files from unauthorized access with our easy-to-use and
+            efficient encryption solution.</p>
+        
+    </div>
+    <section id="features-section">
+        <div class="container">
+            <h2 class="section-header">Features</h2>
+            <div class="feature-item">
+                <img src="design/home/lock-icon.svg" alt="Encryption Icon" class="feature-icon">
+                <h3 class="feature-title">Strong Encryption</h3>
+                <p class="feature-text">Media Security uses the AES algorithm, a widely recognized and trusted
+                    encryption standard, to ensure your media files are protected with strong encryption.</p>
+            </div>
+            <div class="feature-item">
+                <img src="design/home/shield-icon.svg" alt="Security Icon" class="feature-icon">
+                <h3 class="feature-title">Secure Decryption</h3>
+                <p class="feature-text">Our decryption process ensures that only authorized users with the correct
+                    encryption key can decrypt and access your media files, providing an additional layer of
+                    security.</p>
+            </div>
+            <div class="feature-item">
+                <img src="design/home/easy-to-use.png" alt="Ease of Use Icon" class="feature-icon">
+                <h3 class="feature-title">Easy to Use</h3>
+                <p class="feature-text">Media Security provides a simple and intuitive user interface that makes it
+                    easy for anyone to encrypt and decrypt their media files, without requiring any technical
+                    expertise.</p>
+            </div>
+            </div>
+            </section>
+            <section id="features-section1">
+                <div class="container">
+                    <div class="feature-item1">
+                        <h3 class="feature-title1">Why AES?</h3>
+                        <p class="feature-text1">
+                          <b class="highlight">Strong Security:</b><br>
+                            AES uses a symmetric key encryption algorithm, which means that the same key is used for both encryption and decryption. This makes it highly secure, as the key can only be known by authorized parties.
+                          <br><br>
+                          <b class="highlight">Speed:</b><br>
+                          AES is designed to be fast and efficient, making it a popular choice for encrypting large amounts of data.
+                          <br><br>
+                          <b class="highlight">Compatibility:</b><br>
+                          AES is widely supported by a range of software and hardware platforms, making it easy to integrate into existing systems.
+                          <br><br>
+                          <b class="highlight">Scalability:</b><br>
+                          AES can be implemented in a variety of key sizes, including 128-bit, 192-bit, and 256-bit, which allows for flexibility in balancing security needs with performance requirements.
+                          <br><br>
+                          <b class="highlight">Resistance to attacks:</b><br>
+                          AES has been extensively tested and is resistant to a variety of attacks, including brute force, differential and linear cryptanalysis, and more.
+                          <br><br>
+                          <b class="highlight">Standardization:</b><br>
+                          AES is a widely recognized and accepted encryption standard, which means that it is trusted and used by many organizations and governments around the world.
+                        </p>
+                      </div>
+                      
+                    
+                    </div>
+    </section>
+    <section id="about-section">
+        <div class="container">
+            <h2 class="section-header">About Us</h2>
+            <p class="section-text"><b>Media Security is a leading provider of encryption solutions for media files. We
+                are committed to helping individuals and businesses protect their sensitive media content from
+                unauthorized access.</b></p> 
+                <p class="section-text"><b>We are dedicated to delivering reliable and efficient
+                encryption solutions to safeguard your media files.</b></p>
+                <p class="section-text"><b> Our encryption solution is designed to protect your sensitive media files from unauthorized access.</b></p>
+                    <p class="section-text"><b> With our easy-to-use and efficient encryption tool, you can securely encrypt and decrypt your media files
+                 using the Advanced Encryption Standard (AES) algorithm. Our decryption process ensures that only authorized users
+                  with the correct encryption key can access your media files, providing an additional layer of security.</b></p>
+                  <p class="section-text"><b> Whether you are an individual or a business, Media Security is committed to providing reliable and
+                    efficient encryption solutions to help you protect your valuable media content.</b></p>
+        </div>
+    </section>
+    <section id="contact-section">
+        <div class="container">
+            <h2 class="section-header">Contact Us</h2>
+            <form action="#" onsubmit="return save()" method="post" id='form'>
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" required></textarea><br>
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+    </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Media Security. All rights reserved.</p>
+        </div>
+    </footer>
+      <script>
+        function save() {
+            alert('Your response has been saved.');
+            document.getElementById('form').reset();
+    		
+            return false;
+        }
+    </script>
+</body>
+
+</html>
